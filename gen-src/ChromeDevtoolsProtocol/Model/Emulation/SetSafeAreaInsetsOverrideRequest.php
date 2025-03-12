@@ -29,7 +29,7 @@ final class SetSafeAreaInsetsOverrideRequest implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->insets !== null) {

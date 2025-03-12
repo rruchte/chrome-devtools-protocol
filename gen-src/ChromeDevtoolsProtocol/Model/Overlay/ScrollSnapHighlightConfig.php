@@ -43,7 +43,7 @@ final class ScrollSnapHighlightConfig implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->scrollSnapContainerHighlightConfig !== null) {

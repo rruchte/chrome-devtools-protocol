@@ -41,7 +41,7 @@ final class SetSensorOverrideEnabledRequest implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->enabled !== null) {

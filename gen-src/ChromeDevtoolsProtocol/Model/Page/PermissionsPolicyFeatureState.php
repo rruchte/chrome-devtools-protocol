@@ -41,7 +41,7 @@ final class PermissionsPolicyFeatureState implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->feature !== null) {

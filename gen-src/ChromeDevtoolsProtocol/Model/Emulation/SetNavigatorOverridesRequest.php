@@ -33,7 +33,7 @@ final class SetNavigatorOverridesRequest implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->platform !== null) {

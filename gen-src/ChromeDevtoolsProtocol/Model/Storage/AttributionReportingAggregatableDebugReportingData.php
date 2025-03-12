@@ -48,7 +48,7 @@ final class AttributionReportingAggregatableDebugReportingData implements \JsonS
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->keyPiece !== null) {

@@ -43,7 +43,7 @@ final class ChildNodeRemovedEvent implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->parentNodeId !== null) {

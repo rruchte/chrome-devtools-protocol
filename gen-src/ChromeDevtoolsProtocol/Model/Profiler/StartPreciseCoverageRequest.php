@@ -53,7 +53,7 @@ final class StartPreciseCoverageRequest implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->callCount !== null) {

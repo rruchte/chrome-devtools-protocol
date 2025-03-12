@@ -59,7 +59,7 @@ final class BackForwardCacheNotRestoredExplanationTree implements \JsonSerializa
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->url !== null) {

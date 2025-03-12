@@ -35,7 +35,7 @@ final class ClickDialogButtonRequest implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->dialogId !== null) {

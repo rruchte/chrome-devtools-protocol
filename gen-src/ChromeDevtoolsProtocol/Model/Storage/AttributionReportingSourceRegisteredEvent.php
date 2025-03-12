@@ -35,7 +35,7 @@ final class AttributionReportingSourceRegisteredEvent implements \JsonSerializab
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->registration !== null) {

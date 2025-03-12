@@ -125,7 +125,7 @@ final class Credential implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->credentialId !== null) {

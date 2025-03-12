@@ -76,7 +76,7 @@ final class CaptureSnapshotRequest implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->computedStyles !== null) {

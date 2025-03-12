@@ -40,7 +40,7 @@ final class Headers implements \JsonSerializable, \IteratorAggregate
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		return $this->rawData;
 	}

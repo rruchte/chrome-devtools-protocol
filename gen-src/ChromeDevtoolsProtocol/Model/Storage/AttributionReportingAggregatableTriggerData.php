@@ -44,7 +44,7 @@ final class AttributionReportingAggregatableTriggerData implements \JsonSerializ
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->keyPiece !== null) {

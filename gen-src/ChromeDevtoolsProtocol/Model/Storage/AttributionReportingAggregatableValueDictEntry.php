@@ -45,7 +45,7 @@ final class AttributionReportingAggregatableValueDictEntry implements \JsonSeria
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->key !== null) {

@@ -29,7 +29,7 @@ final class UpdateRegistrationRequest implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->scopeURL !== null) {

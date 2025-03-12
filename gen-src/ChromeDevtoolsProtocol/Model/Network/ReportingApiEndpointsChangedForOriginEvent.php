@@ -42,7 +42,7 @@ final class ReportingApiEndpointsChangedForOriginEvent implements \JsonSerializa
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->origin !== null) {

@@ -54,7 +54,7 @@ final class AttributionReportingAggregatableDebugReportingConfig implements \Jso
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->budget !== null) {

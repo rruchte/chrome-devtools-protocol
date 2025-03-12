@@ -33,7 +33,7 @@ final class ConnectTiming implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->requestTime !== null) {

@@ -63,7 +63,7 @@ final class TakeHeapSnapshotRequest implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->reportProgress !== null) {

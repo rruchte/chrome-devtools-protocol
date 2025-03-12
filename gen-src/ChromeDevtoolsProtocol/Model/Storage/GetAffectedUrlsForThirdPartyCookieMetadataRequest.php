@@ -46,7 +46,7 @@ final class GetAffectedUrlsForThirdPartyCookieMetadataRequest implements \JsonSe
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->firstPartyUrl !== null) {

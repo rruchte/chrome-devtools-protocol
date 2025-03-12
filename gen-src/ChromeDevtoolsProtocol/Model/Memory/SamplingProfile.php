@@ -41,7 +41,7 @@ final class SamplingProfile implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->samples !== null) {

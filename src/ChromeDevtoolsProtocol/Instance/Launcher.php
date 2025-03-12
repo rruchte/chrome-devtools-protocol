@@ -22,6 +22,7 @@ class Launcher
 
 	public static $defaultArgs = [
 		"--headless",
+        "--remote-allow-origins=http://127.0.0.1"
 	];
 
 	/** @var string */

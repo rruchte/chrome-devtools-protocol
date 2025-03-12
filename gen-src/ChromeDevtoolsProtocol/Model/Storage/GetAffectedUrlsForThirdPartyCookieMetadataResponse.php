@@ -36,7 +36,7 @@ final class GetAffectedUrlsForThirdPartyCookieMetadataResponse implements \JsonS
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->matchedUrls !== null) {

@@ -33,7 +33,7 @@ final class FontsUpdatedEvent implements \JsonSerializable
 	}
 
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		$data = new \stdClass();
 		if ($this->font !== null) {
