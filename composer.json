@@ -1,5 +1,5 @@
 {
-  "name": "jakubkulhan/chrome-devtools-protocol",
+  "name": "rruchte/chrome-devtools-protocol",
   "type": "library",
   "description": "Chrome Devtools Protocol client for PHP",
   "keywords": [
